@@ -9,12 +9,7 @@ else
 fi
 
 sonar-scanner \
-	-Dsonar.host.url=${INPUT_HOST} \
-	-Dsonar.projectKey=${PWD##*/} \
-	-Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
-	-Dsonar.login=${INPUT_LOGIN} \
-	-Dsonar.password=${INPUT_PASSWORD} \
-	-Dsonar.sources=. \
-	-Dsonar.sourceEncoding=UTF-8 \
-	${SONAR_PASSWORD}
+  -Dsonar.projectKey=AMLS_API \
+  -Dsonar.host.url=http://3.209.122.243:9000 \
+  -Dsonar.login=ba7e11fbc02595f999e47f120444fcd26fdcc1d8
 
